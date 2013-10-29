@@ -1,0 +1,109 @@
+Go Presentation
+
+28 Oct 2013
+
+Andrew Clissold
+Oakland University
+
+* What is Go?
+
+* What is Go?
+
+Go is an attempt to combine the ease of programming of an interpreted, dynamically typed language with the efficiency and safety of a statically typed, compiled language.
+
+It also aims to be modern, with support for networked and multicore computing.
+
+Finally, it is intended to be _fast_: it should take at most a few seconds to build a large executable on a single computer.
+
+* Creators
+
+* Creators
+
+# Guess which company? Yup, Google.
+Hmm...
+
+* Creators
+
+- Robert Griesemer
+- Rob Pike
+- Ken Thompson
+- Russ Cox
+
+* History
+
+* History
+
+Insert content here.
+
+* Language Overview
+
+* Language Overview
+
+Insert content here, including design process.
+
+* Why Go?
+
+* Why Go?
+
+Insert content here, including purpose and classification.
+
+* Related Languages
+
+* Related Languages
+
+Insert content here.
+
+* Sample Code
+
+* Sample Code
+
+Code throughout the slides. Also:
+
+- dl.google.com
+- golang.org
+- YouTube's [[https://github.com/youtube/vitess][Vitess]]
+- This presentation
+
+.play test.go
+
+* Syntax
+
+* Syntax
+
+Insert content here, including variables, data structures, references...
+
+* Concurrency
+
+* Concurrency
+
+Insert content here.
+
+* Compilers
+
+* Compilers
+
+gc
+
+- 8g
+- 6g
+- 5g
+
+gccgo
+
+* Strengths
+
+* Strengths
+
+Insert content here.
+
+* Weaknesses
+
+* Weaknesses
+
+Insert content here.
+
+* Gophers.
+
+* 
+
+.image gopherhat.jpg
