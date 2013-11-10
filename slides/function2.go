@@ -3,7 +3,6 @@
 package main
 
 import "fmt"
-import "log"
 
 func main() {
     a, b := 2, 3
