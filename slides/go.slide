@@ -1,25 +1,35 @@
 Go Presentation
 
-28 Oct 2013
+13 Nov 2013
 
 Andrew Clissold
 Oakland University
 
-* What is Go?
+* 
+
+.html gopher.html
 
 * What is Go?
 
-Go is an attempt to combine the ease of programming of an interpreted, dynamically typed language with the efficiency and safety of a statically typed, compiled language.
+* What is Go?
+
+The [[http://golang.org/doc/faq/][Go FAQ]] summarizes this question nicely:
+
+"Go is an attempt to combine the ease of programming of an interpreted, dynamically typed language with the efficiency and safety of a statically typed, compiled language.
 
 It also aims to be modern, with support for networked and multicore computing.
 
-Finally, it is intended to be _fast_: it should take at most a few seconds to build a large executable on a single computer.
+Finally, it is intended to be _fast_: it should take at most a few seconds to build a large executable on a single computer."
+
+- Writable, reliable
+- Awesome features
+- Incredibly fast
 
 * Creators
 
 * Creators
 
-# Guess which company? Yup, Google.
+# This is where I try and get people to guess why it's called Go.
 Hmm...
 
 * Creators
@@ -27,56 +37,62 @@ Hmm...
 - Robert Griesemer
 - Rob Pike
 - Ken Thompson
-- Russ Cox
 
 * History
 
 * History
 
-Insert content here.
+2007:
+Robert Griesemer, Rob Pike, Ken Thompson
 
-* Language Overview
+2008:
+Russ Cox
 
-* Language Overview
+2009:
+Open source.
 
-Insert content here, including design process.
+2012:
+Go 1
+
+* History
+
+whiteboard sketches
+↓
+
+C compiler
+↓
+
+full-time project
+↓
+
+realization
+↓
+
+open source
+↓
+
+Go 1
 
 * Why Go?
 
 * Why Go?
 
-Insert content here, including purpose and classification.
+The Go FAQ also summarizes this question nicely:
+
+"Go was born out of frustration with existing languages and environments for systems programming. Programming had become too difficult and the choice of languages was partly to blame. One had to choose either efficient compilation, efficient execution, or ease of programming; all three were not available in the same mainstream language. Programmers who could were choosing ease over safety and efficiency by moving to dynamically typed languages such as Python and JavaScript rather than C++ or, to a lesser extent, Java."
+
+- Existing systems languages and environments
+- C++/Python polarization
+- Go's solution
 
 * Related Languages
 
 * Related Languages
 
-Insert content here.
-
-* Sample Code
-
-* Sample Code
-
-Code throughout the slides. Also:
-
-- dl.google.com
-- golang.org
-- YouTube's [[https://github.com/youtube/vitess][Vitess]]
-- This presentation
-
-.play test.go
-
-* Syntax
-
-* Syntax
-
-Insert content here, including variables, data structures, references...
-
-* Concurrency
-
-* Concurrency
-
-Insert content here.
+- C (syntax)
+- Pascal/Modula/Oberon (declarations, packages)
+- Newsqueak/Limbo (concurrency)
+- Python?
 
 * Compilers
 
@@ -90,20 +106,158 @@ gc
 
 gccgo
 
-* Strengths
+* Language Evaluation
 
-* Strengths
+* Language Evaluation
 
-Insert content here.
+Readability
 
-* Weaknesses
+- For the most part, very readable
+- No "stuttering": Foo foo = new Foo();
+- Enforced style
+- Short statements aren't very readable, though
 
-* Weaknesses
+* Language Evaluation
 
-Insert content here.
+Writability
 
-* Gophers.
+- Very writable!
+- Short assignment operator is very nice
+- Idioms dictate succinct variable names
+- Concurrency primitives help greatly
 
-* 
+* Language Evaluation
 
-.image gopherhat.jpg
+Reliability
+
+- Very reliable
+- No pointer arithmetic
+- The [[http://golang.org/ref/spec/][language specification]] was written _first_ and is beautiful
+- Scales gracefully
+
+* Language Evaluation
+
+Cost
+
+- Easy to pick up (it tries not to completely alienate C-family users)
+- Fast! (Writing, compiling, dependency management, execution, everything!)
+- An open source community and active mailing list
+- Amazing reference materials on golang.org (such as the [[http://golang.org/pkg/][package list]])
+
+* Language Overview
+
+* Language Overview
+
+Real-life uses of Go:
+
+- dl.google.com
+- golang.org
+- YouTube's [[https://github.com/youtube/vitess][Vitess]]
+- This presentation
+
+# The remaining slides are very loosely based on tour.golang.org
+
+* Hello World
+
+* Hello World
+
+.code hello.go /^    fmt/,/^    fmt/
+
+* Hello World
+
+.code hello.go /^func/,/^}/
+
+* Hello World
+
+.play hello.go
+
+* Variables
+
+* Variables
+
+.play variables.go
+
+* Basic Types
+
+* Basic Types
+
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte (alias for uint8)
+
+rune (alias for int32)
+
+float32 float64
+
+complex64 complex128
+
+* Functions
+
+* Functions
+
+.play function1.go /func main/,/
+
+* Functions
+
+Other neat things you can do with functions:
+
+.play function2.go /func main/,/
+
+* Flow Control
+
+* Flow Control
+
+.play if1.go /START OMIT/,/END OMIT/
+
+* Flow Control
+
+.play if2.go /START OMIT/,/END OMIT/
+
+* Flow Control
+
+.play for1.go /START OMIT/,/END OMIT/
+
+* Flow Control
+
+.play for2.go /START OMIT/,/END OMIT/
+
+* Flow Control
+
+.play for3.go /START OMIT/,/END OMIT/
+
+* More Types
+
+* More Types
+
+- Array
+- Slice
+- Struct
+- Pointer
+- Function
+- Interface
+- Map
+- Channel
+
+* More Types
+
+.play slice.go /START OMIT/,/END OMIT/
+
+* Concurrency
+
+* Concurrency
+
+# Rather than describing concurrency features in detail, I'm going to give a lightning overview
+# of the examples given in the Go Tour.
+
+See [[http://tour.golang.org/#62][A Tour of Go]].
+
+* References
+
+* References
+
+[[http://golang.org/doc/faq][golang.org]]
