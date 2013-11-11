@@ -200,13 +200,13 @@ complex64 complex128
 
 * Functions
 
-.play function1.go /func main/,/}/
+.play function1.go /START OMIT/,/END OMIT/
 
 * Functions
 
 Other neat things you can do with functions:
 
-.play function2.go /func main/,/}/
+.play function2.go /START OMIT/,/END OMIT/
 
 * Flow Control
 
